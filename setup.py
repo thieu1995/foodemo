@@ -14,7 +14,7 @@ def readme():
 
 setup(
     name="foodemo3",
-    version="0.0.1",
+    version="0.0.2",
     description="My DEMO project",
     long_description=readme(),
     long_description_content_type="text/markdown",
@@ -32,7 +32,7 @@ setup(
     url="https://github.com/thieu1995/foodemo",
     author="thieu",
     author_email="nguyenthieu2102@gmail.com",
-    keywords="openapi docs swagger api documentation v3 v2 json yaml Markdown",
+    keywords="libdemo docs api documentation foo python yaml",
     license="MIT",
     packages=["foo"],
     install_requires=[],
