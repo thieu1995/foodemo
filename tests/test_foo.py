@@ -4,12 +4,12 @@
 #       Github: https://github.com/thieu1995        %                         
 # --------------------------------------------------%
 
-from foo import foo
+from foo import speak
 
 
-def test_foo():
-    assert foo() == "foo"
+def test_english():
+    assert speak.english("Natali") == "Natali"
 
 
-def test_foo_uppercase():
-    assert foo(True) == "FOO"
+def test_vietnamese():
+    assert speak.vietnamese("Linh Nhi") == "Linh Nhi"

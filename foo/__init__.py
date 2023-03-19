@@ -4,7 +4,11 @@
 #       Github: https://github.com/thieu1995        %                         
 # --------------------------------------------------%
 
-def foo(uppercase: bool = False) -> str:
-    if uppercase:
-        return "FOO"
-    return "foo"
+import os
+
+files = os.listdir(__path__[0])
+modules = (
+    x.replace(".py", "") for x in files if x.endswith(".py") and not x.startswith("__")
+)
+for module in modules:
+    __import__("foo." + module)
