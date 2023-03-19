@@ -5,3 +5,5 @@
 # --------------------------------------------------%
 
 from .domath import calculate_perimeter_and_area_circle, calculate_perimeter_and_area_rectangle, calculate_perimeter_and_area_square
+
+__all__ = ("calculate_perimeter_and_area_circle", "calculate_perimeter_and_area_rectangle", "calculate_perimeter_and_area_square")
