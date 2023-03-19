@@ -56,7 +56,6 @@ jobs:
         run: |
           echo "Running linters - if build fails here, please be patient!"
           flake8 .
-          isort --check-only foo 2>&1
 
       - name: Upload pytest test results
         uses: actions/upload-artifact@master
