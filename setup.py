@@ -13,7 +13,7 @@ def readme():
 
 
 setup(
-    name="foodemo",
+    name="foodemo3",
     version="0.0.1",
     description="My DEMO project",
     long_description=readme(),
