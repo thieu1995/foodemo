@@ -17,7 +17,7 @@ foo_version = (
 if "-" in foo_version:
     # when not on tag, git describe outputs: "1.3.3-22-gdf81228" pip has gotten strict with version numbers so change it to: "1.3.3+22.git.gdf81228"
     # See: https://peps.python.org/pep-0440/#local-version-segments
-    v,i,s = foo_version.split("-")
+    v, i, s = foo_version.split("-")
     foo_version = v + "+" + i + ".git." + s
 
 assert "-" not in foo_version
